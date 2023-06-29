@@ -1,5 +1,6 @@
 <script lang="ts">
     import { MetaTags } from "svelte-meta-tags";
+    export let data: { name: string; data: string } = { name: "", data: "" };
 </script>
 
 <div>DYNAMIC META IMAGE</div>
@@ -8,9 +9,7 @@
     openGraph={{
         images: [
             {
-                url: "https://hereisasummaprojectformetaimage.vercel.app/og",
-                width: 800,
-                height: 600,
+                url: `http://localhost:5173/og?name=${data.name}&data=${data.data}`,
                 alt: "DYNAMIC META IMAGE",
             },
         ],
