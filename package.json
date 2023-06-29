@@ -22,6 +22,7 @@
 	"type": "module",
 	"dependencies": {
 		"@ethercorps/sveltekit-og": "^2.0.1",
+		"@vercel/og": "^0.5.8",
 		"axios": "^1.4.0"
 	}
 }

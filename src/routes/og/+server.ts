@@ -13,7 +13,7 @@ const template = (name: string, data: string) => {
         </div>
 `};
 
-const fontFile = await fetch('https://og-playground.vercel.app/inter-latin-ext-400-normal.woff');
+const fontFile = await fetch('https://og-playground.vercel.app/inter-latin-ext-700-normal.woff');
 const fontData: ArrayBuffer = await fontFile.arrayBuffer();
 
 export const GET: RequestHandler = async ({ url }) => {
