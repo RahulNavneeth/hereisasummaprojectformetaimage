@@ -16,8 +16,8 @@
                     data.name
                 }&data=${data.data.replaceAll(" ", "%20")}`,
                 alt: "DYNAMIC META IMAGE",
-                width: 800,
-                height: 600,
+                width: 1200,
+                height: 630,
             },
         ],
     }}
