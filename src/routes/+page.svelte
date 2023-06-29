@@ -1,10 +1,19 @@
 <script lang="ts">
+    import { MetaTags } from "svelte-meta-tags";
     export let data: { URL: string };
 </script>
 
-<svelte:head>
-    <title>DYNAMIC META IMAGE</title>
-    <meta property="og:image" content={data.URL} />
-</svelte:head>
-
 <div>DYNAMIC META IMAGE</div>
+
+<MetaTags
+    openGraph={{
+        images: [
+            {
+                url: data?.URL || "",
+                width: 800,
+                height: 600,
+                alt: "DYNAMIC META IMAGE",
+            },
+        ],
+    }}
+/>
