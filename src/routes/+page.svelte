@@ -11,8 +11,8 @@
             {
                 url: `https://hereisasummaprojectformetaimage.vercel.app/og?name=${data.name}&data=${data.data}`,
                 alt: "DYNAMIC META IMAGE",
-                height: 630,
-                width: 1200,
+                width: 800,
+                height: 600,
             },
         ],
     }}
