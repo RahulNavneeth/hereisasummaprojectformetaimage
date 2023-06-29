@@ -11,6 +11,8 @@
             {
                 url: `http://localhost:5173/og?name=${data.name}&data=${data.data}`,
                 alt: "DYNAMIC META IMAGE",
+                height: 630,
+                width: 1200,
             },
         ],
     }}
