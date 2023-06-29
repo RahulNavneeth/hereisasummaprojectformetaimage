@@ -7,6 +7,9 @@
 
 <MetaTags
     openGraph={{
+        title: data.name,
+        description: data.data,
+        site_name: "discord",
         images: [
             {
                 url: `https://hereisasummaprojectformetaimage.vercel.app/og?name=${
