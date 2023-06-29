@@ -2,7 +2,7 @@
     import { MetaTags } from "svelte-meta-tags";
     import { meta } from "../store";
     export let data: { URL: string };
-    $: meta.set({ URL: "DYNAMIC META IMAGE" });
+    $: meta.set({ URL: data.URL });
 </script>
 
 <div>DYNAMIC META IMAGE</div>
