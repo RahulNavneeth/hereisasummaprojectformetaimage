@@ -9,7 +9,9 @@
     openGraph={{
         images: [
             {
-                url: `https://hereisasummaprojectformetaimage.vercel.app/og?name=${data.name}&data=${data.data}`,
+                url: `https://hereisasummaprojectformetaimage.vercel.app/og?name=${
+                    data.name
+                }&data=${data.data.replaceAll(" ", "%20")}`,
                 alt: "DYNAMIC META IMAGE",
                 width: 800,
                 height: 600,
